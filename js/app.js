@@ -20,6 +20,28 @@ const formMessage = document.getElementById("formMessage");
 
 const controlPanel = document.querySelector(".control-panel");
 
+if (
+    !profileCard ||
+    !profileName ||
+    !profileProgram ||
+    !profileYear ||
+    !profileStatus ||
+    !nameInput ||
+    !programInput ||
+    !yearInput ||
+    !statusInput ||
+    !updateBtn ||
+    !toggleDetailsBtn ||
+    !themeBtn ||
+    !resetBtn ||
+    !detailsPanel ||
+    !studentIdDisplay ||
+    !formMessage ||
+    !controlPanel
+) {
+    console.error("Required DOM elements are missing.");
+}
+
 function isValidStudentName(name) {
     return name.trim().length >= 2;
 }
